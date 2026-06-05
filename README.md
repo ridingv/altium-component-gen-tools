@@ -1,2 +1,2 @@
-# altium-component-gen-tools
-Altium scripts to automate the creation of SCH symbols, PCB footprints and step models from an AI prompt
+# altium-script-test
+Repo for Testing Altium scripting to dynamically create sch symbols and pcb footprints
