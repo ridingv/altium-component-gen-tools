@@ -1,0 +1,51 @@
+# KEMET C1026 - 56pF 50V 1% C0G SMD Ceramic Capacitor
+# MPN      : C0603C560F5GACTU
+# Package  : 0603 (1608M)
+# Datasheet: https://www.kemet.com/content/dam/kemet/lightning/upload/2019/08/KEM_C1026_C0G_SMD.pdf
+#
+# PCB Footprint - IPC-7351 Nominal, reflow soldering
+# SCH Symbol - IEC parallel-plate, 3mm pins, 1mm metric grid, Arial Bold 6
+
+StartFootprints
+
+Footprint (Name "C0603")
+Pad (Name "1") (Location -29.53, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 29.53, 39.37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location 29.53, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 29.53, 39.37) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 5) (Start -11.81, 23.62) (End 11.81, 23.62) (Layer TopOverlay)
+Line (Width 5) (Start -11.81, -23.62) (End 11.81, -23.62) (Layer TopOverlay)
+Line (Width 2) (Start -55.12, -29.53) (End 55.12, -29.53) (Layer Mechanical15)
+Line (Width 2) (Start 55.12, -29.53) (End 55.12, 29.53) (Layer Mechanical15)
+Line (Width 2) (Start 55.12, 29.53) (End -55.12, 29.53) (Layer Mechanical15)
+Line (Width 2) (Start -55.12, 29.53) (End -55.12, -29.53) (Layer Mechanical15)
+Line (Width 2) (Start -19.69, 0) (End 19.69, 0) (Layer Mechanical15)
+Line (Width 2) (Start 0, -19.69) (End 0, 19.69) (Layer Mechanical15)
+Arc (Location 0, 0) (Radius 9.84) (Width 2) (StartAngle 0) (EndAngle 360) (Layer Mechanical15)
+Line (Width 2) (Start -31.50, -17.72) (End 31.50, -17.72) (Layer Mechanical13)
+Line (Width 2) (Start 31.50, -17.72) (End 31.50, 17.72) (Layer Mechanical13)
+Line (Width 2) (Start 31.50, 17.72) (End -31.50, 17.72) (Layer Mechanical13)
+Line (Width 2) (Start -31.50, 17.72) (End -31.50, -17.72) (Layer Mechanical13)
+EndFootprint
+
+EndFootprints
+
+StartComponents
+
+Component (Name "C0603C560F5GACTU") (PartCount 1) (DesPrefix "C?")
+Description (Value "CAP - 56pF 50V 1% C0G - 0603")
+Comment (Value "56pF")
+Parameter (Name "MPN") (Location 0, -78.74) (Height 60) (Rotation 0) (Justification TopCenter) (Visible True) (Font "Arial") (Bold True) (Italic False) (Underline False) (Value "C0603C560F5GACTU") (Part 1)
+Parameter (Name "DES") (Location 0, -137.80) (Height 60) (Rotation 0) (Justification TopCenter) (Visible True) (Font "Arial") (Bold True) (Italic False) (Underline False) (Value "CAP - 56pF 50V 1% C0G - 0603") (Part 1)
+Parameter (Name "Manufacturer") (Location 0, 0) (Height 60) (Rotation 0) (Justification Center) (Font "Arial") (Bold False) (Italic False) (Underline False) (Value "KEMET") (Part 1)
+Parameter (Name "Datasheet") (Location 0, 0) (Height 60) (Rotation 0) (Justification Center) (Font "Arial") (Bold False) (Italic False) (Underline False) (Value "https://www.kemet.com/content/dam/kemet/lightning/upload/2019/08/KEM_C1026_C0G_SMD.pdf") (Part 1)
+Pin (Location -137.80, 0) (Rotation 0) (PinType Passive) (Length 118.11) (Width 0) (Designator Hidden "1") (Name Hidden "~") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 137.80, 0) (Rotation 180) (PinType Passive) (Length 118.11) (Width 0) (Designator Hidden "2") (Name Hidden "~") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Line (Width 5) (Start -19.69, -59.06) (End -19.69, 59.06) (Part 1)
+Line (Width 5) (Start 19.69, -59.06) (End 19.69, 59.06) (Part 1)
+Footprint (Name "C0603")
+EndComponent
+
+EndComponents
